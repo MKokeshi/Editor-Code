@@ -1,0 +1,52 @@
+#cybergrad {
+    height: 100vh;
+    background-image: radial-gradient(circle 780.6px at 10% 20%, rgba(133, 255, 189, 1) 0%, rgb(0, 94, 120) 90.7%);
+    background-color: #000; /* Colore di fallback per il caso in cui il gradiente non venga visualizzato */
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    color: #0cffde; /* Colore del testo del titolo */
+    margin-top: 2rem; /* Aggiunto margine sopra il titolo */
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Font alternativo per il titolo */
+}
+
+.editor-container {
+    margin: auto;
+    width: 90%;
+    max-width: 900px; /* Limita la larghezza massima del contenitore per una migliore leggibilità */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.code-input {
+    width: 90%;
+    min-height: 250px;
+    overflow: auto; /* Modificato overflow in auto per mostrare la barra di scorrimento solo se necessario */
+    margin: 1rem 0;
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 152, 155, 1) 0.1%, rgba(0, 94, 120, 1) 94.2%);
+    border: none;
+    outline: none;
+    font-family: 'Courier New', monospace; /* Cambiato il font per un aspetto più "tecnico" */
+    font-size: 16px;
+    color: #fff; /* Colore del testo */
+    padding: 0.5rem; /* Aggiunto padding */
+    border-radius: 10px; /* Aggiunto un bordo arrotondato */
+}
+
+textarea::placeholder {
+    color: #fff; /* Colore del placeholder */
+}
+
+.code-output {
+    width: 90%;
+    height: 15em;
+    margin: 1rem 0;
+    border: none;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(234, 249, 249, 0.67) 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
+    border-radius: 10px; /* Aggiunto un bordo arrotondato */
+}
